@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		43801D7F280A9FBA00B16FF1 /* FlowerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43801D7E280A9FBA00B16FF1 /* FlowerView.swift */; };
+		43801D81280AA78E00B16FF1 /* ColorCyclingCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43801D80280AA78E00B16FF1 /* ColorCyclingCircleView.swift */; };
 		439863E3280550D300B62FCD /* DrawingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439863E2280550D300B62FCD /* DrawingApp.swift */; };
 		439863E5280550D300B62FCD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439863E4280550D300B62FCD /* ContentView.swift */; };
 		439863E7280550D600B62FCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 439863E6280550D600B62FCD /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		43801D7E280A9FBA00B16FF1 /* FlowerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerView.swift; sourceTree = "<group>"; };
+		43801D80280AA78E00B16FF1 /* ColorCyclingCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCyclingCircleView.swift; sourceTree = "<group>"; };
 		439863DF280550D300B62FCD /* Drawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		439863E2280550D300B62FCD /* DrawingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingApp.swift; sourceTree = "<group>"; };
 		439863E4280550D300B62FCD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,8 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				439863E2280550D300B62FCD /* DrawingApp.swift */,
-				439863E4280550D300B62FCD /* ContentView.swift */,
 				43801D7E280A9FBA00B16FF1 /* FlowerView.swift */,
+				43801D80280AA78E00B16FF1 /* ColorCyclingCircleView.swift */,
+				439863E4280550D300B62FCD /* ContentView.swift */,
 				439863E6280550D600B62FCD /* Assets.xcassets */,
 				439863E8280550D600B62FCD /* Preview Content */,
 			);
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43801D81280AA78E00B16FF1 /* ColorCyclingCircleView.swift in Sources */,
 				439863E5280550D300B62FCD /* ContentView.swift in Sources */,
 				43801D7F280A9FBA00B16FF1 /* FlowerView.swift in Sources */,
 				439863E3280550D300B62FCD /* DrawingApp.swift in Sources */,
