@@ -1,15 +1,14 @@
 //
-//  ContentView.swift
+//  SpecialEffects.swift
 //  Drawing
 //
-//  Created by NGUYEN MINH DUC on 12/04/2022.
+//  Created by NGUYEN MINH DUC on 19/04/2022.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct SpecialEffects: View {
     @State private var amount = 0.0
-    
     var body: some View {
         VStack {
             Image("singapore")
@@ -50,9 +49,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct SpecialEffects_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-//            .preferredColorScheme(.dark)
+        SpecialEffects()
     }
 }

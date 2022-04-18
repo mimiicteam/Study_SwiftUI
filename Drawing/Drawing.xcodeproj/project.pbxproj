@@ -13,6 +13,7 @@
 		439863E5280550D300B62FCD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439863E4280550D300B62FCD /* ContentView.swift */; };
 		439863E7280550D600B62FCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 439863E6280550D600B62FCD /* Assets.xcassets */; };
 		439863EA280550D600B62FCD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 439863E9280550D600B62FCD /* Preview Assets.xcassets */; };
+		43F39AFA280DD23100AA444F /* SpecialEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F39AF9280DD23100AA444F /* SpecialEffects.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		439863E4280550D300B62FCD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		439863E6280550D600B62FCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		439863E9280550D600B62FCD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		43F39AF9280DD23100AA444F /* SpecialEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialEffects.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				439863E2280550D300B62FCD /* DrawingApp.swift */,
 				43801D7E280A9FBA00B16FF1 /* FlowerView.swift */,
 				43801D80280AA78E00B16FF1 /* ColorCyclingCircleView.swift */,
+				43F39AF9280DD23100AA444F /* SpecialEffects.swift */,
 				439863E4280550D300B62FCD /* ContentView.swift */,
 				439863E6280550D600B62FCD /* Assets.xcassets */,
 				439863E8280550D600B62FCD /* Preview Content */,
@@ -147,6 +150,7 @@
 				439863E5280550D300B62FCD /* ContentView.swift in Sources */,
 				43801D7F280A9FBA00B16FF1 /* FlowerView.swift in Sources */,
 				439863E3280550D300B62FCD /* DrawingApp.swift in Sources */,
+				43F39AFA280DD23100AA444F /* SpecialEffects.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
