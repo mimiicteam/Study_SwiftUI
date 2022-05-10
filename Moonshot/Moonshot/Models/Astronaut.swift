@@ -1,13 +1,13 @@
 //
-//  Astronauts.swift
+//  Astronaut.swift
 //  Moonshot
 //
-//  Created by NGUYEN MINH DUC on 11/04/2022.
+//  Created by NGUYEN MINH DUC on 03/05/2022.
 //
 
 import Foundation
 
-struct Astronauts: Codable, Identifiable {
+struct Astronaut: Codable, Identifiable {
     let id: String
     let name: String
     let description: String

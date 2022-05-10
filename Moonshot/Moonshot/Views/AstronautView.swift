@@ -2,14 +2,13 @@
 //  AstronautView.swift
 //  Moonshot
 //
-//  Created by NGUYEN MINH DUC on 12/04/2022.
+//  Created by NGUYEN MINH DUC on 04/05/2022.
 //
 
 import SwiftUI
 
 struct AstronautView: View {
-    let astronaut: Astronauts
-    
+    let astronaut: Astronaut
     var body: some View {
         ScrollView {
             VStack {
@@ -18,6 +17,7 @@ struct AstronautView: View {
                     .scaledToFit()
                 
                 Text(astronaut.description)
+                    .font(.headline.bold())
                     .padding()
             }
         }
@@ -28,8 +28,8 @@ struct AstronautView: View {
 }
 
 struct AstronautView_Previews: PreviewProvider {
-    static let astronauts: [String: Astronauts] = Bundle.main.decode("astronauts.json")
+    static let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
     static var previews: some View {
-        AstronautView(astronaut: astronauts["armstrong"]!)
+        AstronautView(astronaut: astronauts["astronauts"]!)
     }
 }

@@ -1,13 +1,13 @@
 //
-//  Missions.swift
+//  Mission.swift
 //  Moonshot
 //
-//  Created by NGUYEN MINH DUC on 11/04/2022.
+//  Created by NGUYEN MINH DUC on 04/05/2022.
 //
 
 import Foundation
 
-struct Missions: Codable, Identifiable {
+struct Mission: Codable, Identifiable {
     struct CrewRole: Codable {
         let name: String
         let role: String
@@ -15,7 +15,6 @@ struct Missions: Codable, Identifiable {
 
     let id: Int
     let launchDate: Date?
-//    let launchDate: String?
     let crew: [CrewRole]
     let description: String
     
@@ -31,3 +30,4 @@ struct Missions: Codable, Identifiable {
         launchDate?.formatted(date: .abbreviated, time: .omitted) ?? "N/A"
     }
 }
+

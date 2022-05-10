@@ -1,14 +1,14 @@
 //
-//  MoonshotApp.swift
-//  Moonshot
+//  FacebookAppApp.swift
+//  FacebookApp
 //
-//  Created by NGUYEN MINH DUC on 02/05/2022.
+//  Created by NGUYEN MINH DUC on 19/04/2022.
 //
 
 import SwiftUI
 
 @main
-struct MoonshotApp: App {
+struct FacebookAppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

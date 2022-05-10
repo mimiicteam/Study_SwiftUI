@@ -2,30 +2,35 @@
 //  Bundle-Decodable.swift
 //  Moonshot
 //
-//  Created by NGUYEN MINH DUC on 11/04/2022.
+//  Created by NGUYEN MINH DUC on 03/05/2022.
 //
 
 import Foundation
 
 extension Bundle {
     func decode<T: Codable>(_ file: String) -> T {
-        guard let url = self.url(forResource: file, withExtension: nil) else {
-            fatalError("Fail to locate \(file) in bundle.")
+        // URL
+        guard let url = url(forResource: file, withExtension: nil) else {
+            fatalError("Failed to load \(file) in bundle.")
         }
         
+        // DATA
         guard let data = try? Data(contentsOf: url) else {
-            fatalError("Fail to load \(file) from bundle.")
+            fatalError("Failed to load \(file) from bundle.")
         }
         
+        // LOADED
         let decoder = JSONDecoder()
+        
         let formatter = DateFormatter()
         formatter.dateFormat = "y-MM-dd"
         decoder.dateDecodingStrategy = .formatted(formatter)
         
         guard let loaded = try? decoder.decode(T.self, from: data) else {
-            fatalError("Fail to decode \(file) from bundle.")
+            fatalError("Failed to decode \(file) from bundle.")
         }
         
+        print("Success!")
         return loaded
     }
 }

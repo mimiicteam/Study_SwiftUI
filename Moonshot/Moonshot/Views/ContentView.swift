@@ -2,38 +2,36 @@
 //  ContentView.swift
 //  Moonshot
 //
-//  Created by NGUYEN MINH DUC on 10/04/2022.
+//  Created by NGUYEN MINH DUC on 02/05/2022.
 //
 
 import SwiftUI
 
 struct ContentView: View {
-    let astronauts: [String: Astronauts] = Bundle.main.decode("astronauts.json")
-    let missions: [Missions] = Bundle.main.decode("missions.json")
+    let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
+    let missions: [Mission] = Bundle.main.decode("missions.json")
+    
     let columns = [
         GridItem(.adaptive(minimum: 150))
     ]
-    
     var body: some View {
         NavigationView {
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 LazyVGrid(columns: columns) {
                     ForEach(missions) { mission in
                         NavigationLink {
-                            VStack {
-                                MissionView(mission: mission, astronauts: astronauts)
-                            }
-                            .background(.darkBackground)
+                            MissionView(mission: mission, astronauts: astronauts)
                         } label: {
                             VStack {
-                                Image(mission.image)
+                                Image(mission.image) // image
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 100, height: 100)
                                     .padding()
+                                
                                 VStack {
-                                    Text(mission.displayName)
-                                        .font(.subheadline.bold())
+                                    Text(mission.displayName) // displayName
+                                        .font(.headline.bold())
                                         .foregroundColor(.white)
                                     
                                     Text(mission.formattedLaunchDate)
@@ -54,7 +52,7 @@ struct ContentView: View {
                 }
                 .padding([.horizontal, .bottom])
             }
-            .navigationBarTitle("Moonshot")
+            .navigationTitle("Moonshot")
             .background(.darkBackground)
             .preferredColorScheme(.dark)
         }
